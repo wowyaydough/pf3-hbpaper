@@ -1,0 +1,99 @@
+div#title {
+ 
+}
+div#title .wrap {
+  height: 100%;
+  max-width: 100%;
+}
+
+div#title .wrap .slick-dots{
+  bottom: 30px;
+}
+div#title .wrap .slick-dots li{
+  position: relative;
+}
+div#title .wrap .slick-dots li button::before{
+  opacity: 1;
+  color: #dce296;
+  font-size: 12px;
+  transition: 0.5s;
+}
+
+div#title .wrap .slick-dots li.slick-active button::before{
+  color:black;
+  font-size: 16px;
+}
+
+div#title .wrap .slick-dots li.slick-active button::after{
+  content:"";
+  width: 15px;
+  height: 15px;
+  border: 2px solid white;
+  display: block;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left:0;
+  opacity: 0.6;
+}
+
+div#title .wrap .slick-list{
+  height: 100%;
+}
+div#title .wrap .slick-list .slick-track{
+  height: 100%;
+}
+
+
+div#title .wrap .witem{
+   height: 100%;
+   background-size: cover;
+   background-position: center;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   transform: scale(1.2);
+   transition: all 1s !important;
+}
+div#title .wrap .witem.slick-active{
+  transform:scale(1);
+}
+div#title .wrap .witem1{
+  background-image: url(../img/title0001.jpg);
+}
+div#title .wrap .witem2{
+  background-image: url(../img/title0002.jpg);
+}
+div#title .wrap .witem3{
+  background-image: url(../img/title0003.jpg);
+}
+div#title .wrap .witem:not(:first-child){
+
+}
+div#title .wrap h2 {
+  order: 2;
+}
+
+div#title .wrap .witem1 h2{
+  
+}
+div#title .wrap .witem2 h2{
+  color: white;
+}
+div#title .wrap .witem3 h2{
+color:#386202;
+}
+div#title .wrap .witem2 p{
+  color:white;
+}
+div#title .wrap .witem3 p{
+  color: #386202;
+}
+div#title .wrap h2 span.block{
+  
+  display: none;
+}
+div#title .wrap p {
+  order: 1;
+}
